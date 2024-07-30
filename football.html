@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bicycle</title>
+    <style>
+     .main{
+       
+        border: 2px solid red;
+     }
+     .pic{
+        margin-left: 300px;
+        transition: transform 1s ease-out;
+    
+     }
+     .main:hover .pic{
+        transform: translateY(-100px) translateX(-50px) rotateZ(-45deg);
+     }
+     .main:hover .ball{
+        transform: translateX(-350px) translateY(30px);
+     }
+     .ball{
+        background-color: rgb(75, 75, 75);
+        width: 4rem;
+        height: 4rem;
+        border-radius: 50%;
+        margin-top: 130px;
+        margin-left: 400px;
+        
+        transition: transform 0.3s ease-out 1s;
+     }
+     @media screen and (max-width: 590px) {
+        .main{
+            width: 400px;
+            margin: 0px auto;
+        }
+        .pic{
+            width: 70%;
+            margin-left: 100px;
+            
+            
+        }
+        .ball{
+            width: 2.2rem;
+        height: 2.2rem; 
+        margin-left: 150px;
+        margin-bottom: 40px;
+        }
+     }
+    </style>
+</head>
+<body>
+    <div class="main"> 
+        <div class="ball"></div> 
+        <img src="bicyclepng.png" alt="" class="pic">
+      
+    </div>
+</body>
+</html>
