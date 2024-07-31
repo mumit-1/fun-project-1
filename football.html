@@ -5,56 +5,91 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>bicycle</title>
     <style>
+        body{
+            background-color: black;
+        }
      .main{
+       position: relative;
        
         
      }
      .pic{
-        margin-left: 300px;
-        transition: transform 1s ease-out;
     
+        margin-top: 100px;
+        margin-left: 700px;
+        transform: rotate(20deg);
+        transition: transform 1.3s ease-out;
      }
      .main:hover .pic{
-        transform: translateY(-100px) translateX(-50px) rotateZ(-45deg);
+        transform: translateX(-50px) rotateZ(-90deg);
      }
      .main:hover .ball{
-        transform: translateX(-350px) translateY(30px);
+        transform: translateX(-750px) translateY(100px) rotate(120deg);
      }
      .ball{
-        background-color: rgb(75, 75, 75);
+        background-color: rgb(100, 100, 100);
         width: 4rem;
         height: 4rem;
+        position: relative;
+        bottom: 478px;
+        left: 870px;
         border-radius: 50%;
-        margin-top: 130px;
-        margin-left: 400px;
+        border: 0px;
         
-        transition: transform 0.3s ease-out 1s;
+        transition: transform 0.7s ease-out 0.6s;
+     }
+     h1{
+        color: white;
+       text-align: center;
+       width: 200px;
+       margin-left: 650px;
+       margin-bottom: 100px;
+       font-family: Arial, Helvetica, sans-serif;
+       transform: scale(0);
+       transition: transform 0.3s ease-out 1.2s;
+     }
+     .main:hover h1{
+         transform: scale(1.8) translateY(100px);
      }
      @media screen and (max-width: 590px) {
         .main{
-            width: 400px;
+            width: 350px;
             margin: 0px auto;
         }
         .pic{
+            
             width: 70%;
             margin-left: 70px;
             
             
         }
+        h1{
+            margin: 0px auto;
+        }
         .ball{
-            width: 2.2rem;
-        height: 2.2rem; 
+            left: -5px;
+            top: 195px;
+           
+            width: 2.1rem;
+        height: 2.1rem; 
         margin-left: 120px;
         margin-bottom: 40px;
         }
+        .main:hover .ball{
+        transform: translateX(-450px) translateY(100px) rotate(120deg);
+     }
      }
     </style>
 </head>
 <body>
+    
+    <main>
     <div class="main"> 
-        <div class="ball"></div> 
+       <h1>GOAL!!</h1>
+        <img src="ball-fun-2.png" alt="" class="ball"> 
         <img src="bicyclepng.png" alt="" class="pic">
       
     </div>
+</main>
 </body>
 </html>
