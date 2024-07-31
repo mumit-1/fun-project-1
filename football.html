@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>bicycle</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Sanchez:ital@0;1&display=swap');
         body{
             background-color: black;
         }
@@ -15,16 +16,10 @@
      }
      .pic{
     
-        margin-top: 100px;
-        margin-left: 700px;
-        transform: rotate(20deg);
-        transition: transform 1.3s ease-out;
-     }
-     .main:hover .pic{
-        transform: translateX(-50px) rotateZ(-90deg);
-     }
-     .main:hover .ball{
-        transform: translateX(-750px) translateY(100px) rotate(120deg);
+      
+        margin-left: 500px;
+        transform: rotate(40deg);
+        transition: transform 1.2s ease-out;
      }
      .ball{
         background-color: rgb(100, 100, 100);
@@ -32,24 +27,56 @@
         height: 4rem;
         position: relative;
         bottom: 478px;
-        left: 870px;
+        left: -100px;
         border-radius: 50%;
         border: 0px;
         
-        transition: transform 0.7s ease-out 0.6s;
+        /* transition: transform linear 0.6s; */
      }
-     h1{
-        color: white;
+     .main:hover .pic{
+        transform: translateX(-50px) rotateZ(-90deg);
+     }
+     .main:hover .ball {
+        animation: move 1.15s linear forwards;
+    }
+
+    @keyframes move {
+        0% {
+            transform: translateX(-100px) translateY(-150px) rotate(120deg) ;
+        }
+        50% {
+            transform: translateX(800px) translateY(0px) rotate(120deg);
+        }
+        100% {
+            transform: translateX(-300px) translateY(200px) rotate(120deg);
+        }
+    }
+
+
+     /* .main:hover .ball{
+        transform: translateX(-750px) translateY(100px) rotate(120deg);
+     } */
+     
+     .h1{
+        color: rgb(255, 221, 53);
        text-align: center;
-       width: 200px;
-       margin-left: 650px;
-       margin-bottom: 100px;
-       font-family: Arial, Helvetica, sans-serif;
+      width: 200px;
+      margin: 0 auto;
+      font-size: 50px;
+       font-family: "Bebas Neue", sans-serif;
        transform: scale(0);
        transition: transform 0.3s ease-out 1.2s;
      }
-     .main:hover h1{
-         transform: scale(1.8) translateY(100px);
+     .main:hover .h1{
+         transform: scale(1.8) translateY(20px);
+     }
+     .footer{
+        color: white;
+        font-family: sans-serif;
+        text-align: center;
+        opacity: 0.4;
+        margin-top: 45px;
+        margin-bottom: 0;
      }
      @media screen and (max-width: 590px) {
         .main{
@@ -57,39 +84,73 @@
             margin: 0px auto;
         }
         .pic{
-            
+            position: relative;
+            top: 100px;
             width: 70%;
             margin-left: 70px;
-            
+            transition: transform 1.35s ease-out;
             
         }
-        h1{
+        .h1{
             margin: 0px auto;
+            font-size: 50px;
         }
         .ball{
-            left: -5px;
+            left: -250px;
             top: 195px;
            
             width: 2.1rem;
         height: 2.1rem; 
         margin-left: 120px;
         margin-bottom: 40px;
+        transition-timing-function: linear;
         }
-        .main:hover .ball{
-        transform: translateX(-450px) translateY(100px) rotate(120deg);
+      
+     .main:hover .ball {
+        animation: move 1.55s linear forwards;
+    }
+
+    @keyframes move {
+        0% {
+            transform: translateX(-100px) translateY(-90px) rotate(120deg);
+        }
+        50% {
+            transform: translateX(230px) translateY(12px) rotate(0deg);
+        }
+        100% {
+            transform: translateX(-300px) translateY(150px) rotate(120deg);
+        }
+    }
+    .main:hover .h1{
+         transform: scale(1.8) translateY(100px);
+     }
+     .footer{
+        margin-top: 150px;
+        transition: font-size 0.1s ease-out;
+        transition-delay: 1.75s;
+     }
+     .main:hover .footer{
+        font-size: 0px;
+      
+      transition-duration: 0.1s;
+      transition-delay: 0s;
      }
      }
+     /* in the first part's(only .footer) transition function work for ending anymation and the opposite i mean starting part work in the hover part */
     </style>
 </head>
 <body>
     
     <main>
     <div class="main"> 
-       <h1>GOAL!!</h1>
+       <p class="h1">GOOOLAZO!!!</p>
         <img src="ball-fun-2.png" alt="" class="ball"> 
         <img src="bicyclepng.png" alt="" class="pic">
-      
+              <p class="footer">Click to GOAL!</p>
     </div>
+    
+
+    
 </main>
 </body>
 </html>
