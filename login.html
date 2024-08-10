@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <style>
+        body{
+            margin: 0;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 17px;
+        }
+        .body{
+            margin: 0px;
+            background-image: url(wallpaperflare.com_wallpaper\ \(7\).jpg);
+            background-position: center;
+            background-size: cover;
+            width: 100%;
+            height: 100vh;
+            padding: 0;
+            display: flex;
+        }
+        .login-start{
+            width: 25%;
+            border-radius: 18px;
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            border: 2px solid rgba(164, 164, 164, 0.405);
+            padding: 10px 0px;
+            backdrop-filter: blur(8px);
+            box-shadow: 0px 0px 50px black;
+        }
+        h1,label,p,a{
+            color: rgb(255, 255, 255);
+        }
+        i{ 
+            color: white;
+            position: relative;
+            top: 2px;
+            right: 5px;
+            font-size: 13px;
+        }
+        input{
+            width: 250px;
+            margin-bottom: 30px;
+            border: none;
+            border-bottom: 2px solid rgba(255, 255, 255, 0.474);
+            background-color: rgba(0, 0, 0, 0);
+            color: white;
+        }
+        
+        ::placeholder{
+            color: white;
+        }
+        input:focus{
+            border: 0;
+            outline: 0;
+            border-bottom: 2px solid white;
+        }
+        .input-2{
+            display: flex;
+            justify-content: space-between;
+            gap: 30px;
+        }
+        .input-2 > p{
+            margin-top: 0;
+        }
+        input[type="radio"]{
+            appearance: none;
+            display: inline-block;
+            width: 13px;
+            height: 14px;
+            margin: 0;
+            border: 1px solid white;
+            border-radius: 3px;
+            outline: none;
+            cursor: pointer;
+        }
+        input[type="radio"]:checked::before{
+            content: "✓";
+            display: block;
+            position: absolute;
+        font-size: 16px;
+        top: 200px;
+        }
+        button{
+            margin-top: 20px;
+            width: 35%;
+            border-radius: 30px;
+            height: 40px;
+            font-size: 17px;
+            border: 0;
+        }
+        @media screen and (max-width: 576px) {
+            .login-start{
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="body">
+        <div class="login-start">
+            <h1>Sign in</h1>
+            <div class="input"><i class="fa-regular fa-user"></i><input type="text" placeholder="Username"></div>
+            <div class="input"><i class="fa-solid fa-lock"></i><input type="password" name="" id="" placeholder="Password"></div>
+            <div class="input-2"><label for="|"><input type="radio" name="Remeber me" id="Remeber me" class="pick">Remember me</label> <p>Forgot Password?</p></div>
+            <button>Sign in</button>
+            <p>Don't have an account? <a href="">Signup</a></p>
+        </div>
+    </div>
+</body>
+</html>
