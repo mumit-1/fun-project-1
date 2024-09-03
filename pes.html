@@ -14,6 +14,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
         .font {
             font-family: "Oswald", sans-serif;
@@ -45,47 +46,9 @@
                 <a role="tab" class="tab text-2xl text-slate-200">Mumit</a>
             </div>
         </section>
+
         <section>
             <p class="ml-2 text-lg text-center">Match details</p>
-        </section>
-        <section>
-            <div class="overflow-x-auto lg:max-w-4xl lg:mx-auto m-2 text-white border rounded-lg z-10">
-                <p class="border-b p-2">1st Leg</p>
-                <table class="table text-xl">
-                    <!-- head -->
-                    <thead>
-                        <tr>
-                            <th>#</th>
-                            <th>Match 1</th>
-                            <th>Match 2</th>
-
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <!-- row 1 -->
-                        <tr>
-                            <th>1</th>
-                            <td>Nafin vs Nafis<br>(1-1) - (0-2)</td>
-                            <td>Mumit vs Rishad<br>(3-2)</td>
-
-                        </tr>
-                        <!-- row 2 -->
-                        <tr>
-                            <th>2</th>
-                            <td>Nafin vs Rishad<br>(3-2)</td>
-                            <td>Nafis vs Mumit<br>(2-0) - (1-2)</td>
-
-                        </tr>
-                        <!-- row 3 -->
-                        <tr>
-                            <th>3</th>
-                            <td>Nafin vs Mumit<br>(3-1) - (2-1)</td>
-                            <td>Nafis vs Rishad<br>(3-1)</td>
-
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
         </section>
         <section>
             <div class="overflow-x-auto max-w-4xl lg:mx-auto  mx-2 my-4 border p-1 rounded-lg text-white">
@@ -123,48 +86,107 @@
                         <tr>
                             <th>2</th>
                             <td>Nafin</td>
-                            <td>5</td>
+                            <td>6</td>
                             <td>3</td>
                             <td>1</td>
-                            <td>1</td>
-                            <td>9</td>
-                            <td>5</td>
-                            <td>4</td>
+                            <td>2</td>
+                            <td>11</td>
+                            <td>8</td>
+                            <td>3</td>
                             <th>10</th>
                         </tr>
-               
                         <tr>
                             <th>3</th>
-                            <td>Mumit</td>
+                            <td>Rishad</td>
                             <td>5</td>
                             <td>2</td>
                             <td>0</td>
                             <td>3</td>
-                            <td>7</td>
                             <td>10</td>
-                            <td>-3</td>
+                            <td>10</td>
+                            <td>0</td>
+                            <th>6</th>
+                        </tr>
+                        <tr>
+                            <th>4</th>
+                            <td>Mumit</td>
+                            <td>6</td>
+                            <td>2</td>
+                            <td>0</td>
+                            <td>4</td>
+                            <td>7</td>
+                            <td>12</td>
+                            <td>-5</td>
                             <th>6</th>
                         </tr>
                   
-                        <tr>
-                            <th>4</th>
-                            <td>Rishad</td>
-                            <td>3</td>
-                            <td>0</td>
-                            <td>0</td>
-                            <td>3</td>
-                            <td>5</td>
-                            <td>9</td>
-                            <td>-4</td>
-                            <th>0</th>
-                        </tr>
+                        
 
                         </tfoot>
                 </table>
             </div>
         </section>
         <section>
-            <p class="small mx-3 lg:max-w-4xl lg:mx-auto">Rules: 2 matches between every team and the final scoreboard will be the final result.</p>
+            <div class="mx-3 lg:max-w-4xl lg:mx-auto my-10">
+                <h1 class="text-center text-2xl">Final results</h1>
+                <div class="flex lg:justify-around lg:flex-row flex-col justify-center items-center gap-5 my-5">
+                    <div>
+                        <p class="text-amber-300 text-5xl">1st - ? <i class="fa-solid fa-trophy text-4xl"></i></p>
+                    </div>
+                    <div>
+                        <p class="text-3xl">2nd - ?</p>
+                    </div>
+                    <div>
+                        <p class="text-xl">3rd - Rishad</p>
+                    </div>
+                    <div>
+                        <p class="text-sm">4th - Mumit</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="overflow-x-auto lg:max-w-4xl lg:mx-auto m-2 text-white border rounded-lg z-10">
+                <p class="border-b p-2">Scoreboard</p>
+                <table class="table text-xl">
+                    <!-- head -->
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Match 1</th>
+                            <th>Match 2</th>
+
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- row 1 -->
+                        <tr>
+                            <th>1</th>
+                            <td>Nafin vs Nafis<br>(1-1) - (0-2)</td>
+                            <td>Mumit vs Rishad<br>(3-2) - (0-2)</td>
+
+                        </tr>
+                        <!-- row 2 -->
+                        <tr>
+                            <th>2</th>
+                            <td>Nafin vs Rishad<br>(3-2) - (2-3)</td>
+                            <td>Nafis vs Mumit<br>(2-0) - (1-2)</td>
+
+                        </tr>
+                        <!-- row 3 -->
+                        <tr>
+                            <th>3</th>
+                            <td>Nafin vs Mumit<br>(3-1) - (2-1)</td>
+                            <td>Nafis vs Rishad<br>(3-1) - </td>
+
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+       
+        <section>
+            <p class="small mx-3 lg:max-w-4xl lg:mx-auto mb-4">Rules: 2 matches between every team and the final scoreboard will be the final result.</p>
         </section>
     </main>
 </body>
