@@ -31,7 +31,7 @@
 
         .head {
             background: rgb(183, 0, 255);
-            background: linear-gradient(180deg, rgba(183, 0, 255, 0.1) 0%, rgba(29, 0, 255, 0.1) 100%),url(pes_stadium.jpg);
+            background: linear-gradient(180deg, rgba(183, 0, 255, 0.1) 0%, rgba(29, 0, 255, 0.1) 100%), url(pes_stadium.jpg);
             background-position: center;
             background-size: cover;
             border-color: #00fffc;
@@ -48,7 +48,6 @@
         .font2 {
             font-family: "Protest Guerrilla", sans-serif;
         }
-        
     </style>
 </head>
 
@@ -69,13 +68,13 @@
 
     </header>
 
-    <main class="pt-3 mt-4 rounded-t-[30px]  text-white border-t-4">
+    <main class="pt-3 mt-4 rounded-t-[30px]  text-white border-t-4 lg:max-w-4xl lg:mx-auto lg:px-10">
 
         <section>
             <div class="flex justify-center mt-2 gap-1">
                 <div class="w-[40px]"><img class="w-full" src="banner.png" alt=""></div>
                 <p class="text-center text-3xl mb-5"> Players </p>
-                
+
             </div>
             <div role="tablist" class="tabs mb-8 px-5 lg:max-w-4xl lg:mx-auto">
                 <a role="tab" class="tab text-2xl text-cyan-300 text-yellow-300 font2">Nafin</a>
@@ -236,8 +235,8 @@
                     <div class="collapse-title text-xl font-xs">
                         <div class="flex gap-2">
                             <div class="w-[28px]"><img class="w-full" src="whistle.png" alt=""></div>
-                            <p >Rules:</p>
-                            
+                            <p>Rules:</p>
+
                         </div>
                     </div>
                     <div class="collapse-content peer-checked:block hidden">
@@ -424,8 +423,14 @@
                 </div>
             </div>
         </section>
+
         <section>
-            <p class=" text-slate-600 text-right mx-3">mk / version-2.0.0</p>
+            <div class="overflow-hidden mx-3">
+                <div class="relative top-7 w-1/4 ml-2">
+                    <img class="w-full" src="mammal.png" alt="">
+                </div>
+                <p class=" text-slate-600 text-right">mk / version-2.0.1</p>
+            </div>
         </section>
     </main>
 
